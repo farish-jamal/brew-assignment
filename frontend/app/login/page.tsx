@@ -37,7 +37,7 @@ export default function LoginPage() {
 
   const handleGoogleLogin = () => {
     window.location.href =
-      `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:5000'}/api/auth/google`
+      `${process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'hhttps://brew-assignment.onrender.com'}/api/auth/google`
   }
 
   return (

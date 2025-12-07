@@ -7,7 +7,13 @@ import { useState, useEffect } from 'react'
 interface TaskFormProps {
   task?: Task | null
   onClose: () => void
-  onSubmit: (data: FormData) => void
+  onSubmit: (data: {
+    title: string
+    description: string
+    dueDate: string
+    priority: 'low' | 'medium' | 'high'
+    status: 'To Do' | 'In Progress' | 'Done'
+  }) => void
   isSubmitting?: boolean
 }
 
